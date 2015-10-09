@@ -21,6 +21,23 @@ end
 # .include? - figures out of a string includes a specified sub-string
 # .keys - returns an array of just the keys in a hash
 
+# Person 2
+def my_array_modification_method!(pets_array, number_of_pets)
+	pets_array.map do |i|
+		i.is_a?(Integer)? i += number_of_pets : i
+	end
+end
+
+def my_hash_modification_method!(pets_hash, years)
+  pets_hash.each { | k, v | pets_hash[k] = v + 2 }
+end
+
+# Identify and describe the Ruby method(s) you implemented
+#
+# .map - Finds the contents of an array that meet certain criteria, and changes the original array using a code block.
+# .is_a? - Identifies whether an object is of a certain type
+# .each - Iterates through a hash or an array and performs a code block on each item
+
 
 
 # Release 2: Identify and describe the Ruby method you implemented. Teach your
