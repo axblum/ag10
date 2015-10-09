@@ -29,7 +29,7 @@ def my_array_modification_method!(pets_array, number_of_pets)
 end
 
 def my_hash_modification_method!(pets_hash, years)
-  pets_hash.each { | k, v | pets_hash[k] = v + 2 }
+  pets_hash.each { | k, v | pets_hash[k] = v + years }
 end
 
 # Identify and describe the Ruby method(s) you implemented
