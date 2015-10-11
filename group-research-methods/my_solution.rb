@@ -38,7 +38,17 @@ end
 # .is_a? - Identifies whether an object is of a certain type
 # .each - Iterates through a hash or an array and performs a code block on each item
 
+# Person 3
+def my_array_sorting_method(source)
+  source.sort{|a,b| a.to_s <=> b.to_s}
+end
 
+def my_hash_sorting_method(source)
+  source.sort_by{|k,v| v}
+end
+# sort => uses the <=> (comparison operator) to sort the inputs. The advantage is that you can sort by any criteria if you pass in a block.
+# sort_by => Only takees in one arguement.The argument is used to do all the sorting on that one input
+# to_s => Turns the output into a string
 
 # Release 2: Identify and describe the Ruby method you implemented. Teach your
 # accountability group how to use the methods.
