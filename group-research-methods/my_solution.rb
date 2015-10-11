@@ -23,7 +23,7 @@ end
 
 # Person 2
 def my_array_modification_method!(pets_array, number_of_pets)
-	pets_array.map do |i|
+	pets_array.map! do |i|
 		i.is_a?(Integer)? i += number_of_pets : i
 	end
 end
