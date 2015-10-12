@@ -15,8 +15,8 @@ def my_hash_finding_method(source, thing_to_find)
 end
 
 # Identify and describe the Ruby method(s) you implemented.
-# 
-# .select - the select method finds array elements or hash key/value pairs that match the criterion on the right 
+#
+# .select - the select method finds array elements or hash key/value pairs that match the criterion on the right
 # .to_s - converts any object to a string
 # .include? - figures out of a string includes a specified sub-string
 # .keys - returns an array of just the keys in a hash
@@ -50,13 +50,36 @@ end
 # sort_by => Only takees in one arguement.The argument is used to do all the sorting on that one input
 # to_s => Turns the output into a string
 
+
+# Person 4
+def my_array_deletion_method!(source, thing_to_delete)
+  source.each do |word|
+    if word.to_s.include? (thing_to_delete)
+    source.delete(word)
+    end
+  end
+end
+
+def my_hash_deletion_method!(source, thing_to_delete)
+  source.each do |v|
+    source.delete_if {|k,v| k==thing_to_delete }
+    end
+end
+
+
+#delete: It deletes the key-value pair
+#delete_if: It deletes every element for which block evaluates to true
+# .include?(): returns true if any member of the enumerable equals the object
+# .include?(): look for any letter, sub-string, integer, float by inserting them in the parentheses.
+#
+
 # Release 2: Identify and describe the Ruby method you implemented. Teach your
 # accountability group how to use the methods.
-# 
+#
 #.select - is used in a similar way as .each. The difference is that where the .each method
 # => does something to every single element of an array, the .select method just finds the
 # => key/value pairs of a hash or elements of an array that fall into the criterion specified on
-# => the far right in the curly bars. 
+# => the far right in the curly bars.
 #
 #.to_s is a fairly easy method to implement. It's used turn any object into a string. 2.to_s will
 # => return the string "2".
