@@ -1,20 +1,30 @@
-// Person 1 - User Stories
+// Person 2 - Pseudocode
 
 // The user wants to input a list of numbers (that can be any length) into the following
 // functions.
 
+
 // Function 1
-// The user wants a function 'sum' that should add up all the numbers in the list
-// and outputs a single number: the 'sum'.
+// Pseudocode
+// Function Sum that takes in an Array as a param.
+// Set a var as sum equal to zero
+// FOR in array
+// add value to sum
+// Return sum
 
 
 // Function 2
-// The user wants a function 'mean' that finds the average of all the numbers in the list
-// (via summing all the numbers and dividing it by the length of the list). This function
-// should output a single number: the 'mean'.
+// Create Function called mean which takes in an array
+// call the sum function on the array
+// store that as sum
+// divide the sum / array.length
+// return mean
 
 // Function 3
-// The user wants a function 'median' that should order the list of numbers and find the
-// number in the middle. If the list has an even number of numbers, the two numbers in 
-// the middle should be averaged for the median. The function should output a single number
-// the median. 
+// Create function median which takes in an array
+// if the array has an odd number of elements
+// 		Get the middle element
+// 		Return middle element
+// else
+// 		call the median method with the two middle elements as an array
+// 		Return  median
