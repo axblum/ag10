@@ -14,7 +14,7 @@
 
 
 
-// function arraySum(array) {
+// function Sum(array) {
 // 	var sum = 0;
 // 	for (var i = 0; i < array.length; i++) {
 // 		sum = sum + array[i];
@@ -24,7 +24,7 @@
 
 // Re-factored solution
 
-function arraySum(array) {
+function Sum(array) {
 	var sum = 0;
 	array.forEach(function(num) {
 		sum += num;
