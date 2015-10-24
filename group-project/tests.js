@@ -2,9 +2,17 @@
 // __________________________________________
 // Tests:  Do not alter code below this line.
 
+function sum(length) {
+  var sum = 0;
+  for (var i = 0; i = length; i++) {
+    sum++
+  }
+  return sum;
+}
 
-oddLengthArray  = [1, 2, 3, 4, 5, 5, 7]
-evenLengthArray = [4, 4, 5, 5, 6, 6, 6, 7]
+
+var oddLengthArray  = [1, 2, 3, 4, 5, 5, 7]
+var evenLengthArray = [4, 4, 5, 5, 6, 6, 6, 7]
 
 
 function assert(test, message, test_number) {
