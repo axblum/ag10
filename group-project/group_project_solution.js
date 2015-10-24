@@ -44,9 +44,6 @@ function mean(array) {
 	return mean;
 }
 
-console.log(mean([1,2,3,4,5]))
-
-
 // Function 3
 // Create function median which takes in an array
 // if the array has an odd number of elements
@@ -73,6 +70,3 @@ function median(array) {
 	var i = Math.floor(array.length / 2);
 	return array.length % 2 === 1 ? array[i] : (array[i-1] + array[i]) / 2;
 }
-
-
-console.log(median([2,4,5,7,8,9]));
