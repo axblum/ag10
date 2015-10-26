@@ -24,7 +24,7 @@
 
 // Re-factored solution
 
-function Sum(array) {
+function sum(array) {
 	var sum = 0;
 	array.forEach(function(num) {
 		sum += num;
@@ -40,7 +40,7 @@ function Sum(array) {
 // return mean
 
 function mean(array) {
-	var mean = arraySum(array) / array.length;
+	var mean = sum(array) / array.length;
 	return mean;
 }
 
@@ -70,3 +70,6 @@ function median(array) {
 	var i = Math.floor(array.length / 2);
 	return array.length % 2 === 1 ? array[i] : (array[i-1] + array[i]) / 2;
 }
+
+
+// Every test passed.
